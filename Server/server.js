@@ -1,0 +1,7 @@
+const http = require('http');
+const port = 8080;
+http.createServer((request,response)=>{
+    response.write("<h1>Hello bhosdiwale chicha</h1>");
+    response.end();
+}).listen(port);
+console.log(`Listening to port ${port}`);
