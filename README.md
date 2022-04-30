@@ -10,3 +10,7 @@ NodeJS built-in module called HTTP, allows NodeJS to transfer data over the brow
 - Everytime we use and function from http object of web server we always need a callback function
 - Request object is what client request from us, as we wrote variable of type const request.
 - Everything we want to show in web page via web server we use response.write(), and in order to call it in from server we have to tell server to send response , so we'll write response.end();
+
+## One Little error I was doing in NodeJS HTTP in File System, while creating server I accidentally put response.end() which'll end it's server on te spot without showing us output so always put response.end() at the end of the result showing in it
+
+- for more refference go see `Obj.js` `app.js` and `Object.js` in `Static` folder.

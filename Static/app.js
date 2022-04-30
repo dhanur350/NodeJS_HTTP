@@ -6,7 +6,6 @@ const server = http.createServer(function (request, response) {
         const readStream = fs.createReadStream('./index.html');
         response.writeHead(200, { 'Content-type': 'text/html' });
         readStream.pipe(response);
-        response.end();
     }
     else {
         response.write('You are in the other domain page');
